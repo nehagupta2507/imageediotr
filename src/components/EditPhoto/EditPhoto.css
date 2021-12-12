@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+}
+
+.imgEdit {
+  display: block;
+  align-items: center;
+  justify-items: center;
+  margin-left: 25%;
+  margin-top: 2vh;
+  width: 50%;
+  height: 70vh;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 50vw;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+}
+
+.sidebar-item {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  position: relative;
+  transition: background-color 150ms;
+  font-size: 1.5em;
+}
+
+.sidebar-item:hover,
+.sidebar-item:focus {
+  background-color: hsla(59, 100%, 50%, 0.863);
+
+}
+
+.sidebar-item.active {
+  background-color: hsl(44, 100%, 50%);
+
+}
+
+
+.sidebar-item:last-child::after {
+  display: none;
+}
+
+.canvasObject {
+  display: none;
+}
+
+/* Hiding a button but clicking it from js */
+#go_to_download {
+  display: none;
+}
+
+.downloadButton {
+  font-size: 1.5em;
+
+}
+
+@media (min-width:686px) and (max-width:880px) {
+  .sidebar-item {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width:500px) and (max-width:687px) {
+  .sidebar-item {
+    font-size: 1em;
+    padding: 0.5rem;
+
+  }
+}
+
+@media (max-width:500px) {
+  .sidebar-item {
+    font-size: 0.6em;
+    padding: 0.3rem;
+    padding-top: 1rem;
+  }
+
+  .downloadButton {
+    font-size: 0.7em;
+  }
+
+}

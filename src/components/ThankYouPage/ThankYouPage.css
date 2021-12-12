@@ -1,0 +1,26 @@
+#greetings {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  height: 100vh;
+  margin-left: 25vw;
+  color: whitesmoke;
+}
+
+#backBtn {
+  align-self: center;
+}
+
+/* Responsive Media Queries */
+@media (min-width: 500px) and (max-width: 1040px) {
+  #greetings #backBtn {
+    font-size: 10px;
+  }
+}
+@media (max-width: 500px) {
+  #greetings #backBtn {
+    font-size: 5px;
+  }
+}
